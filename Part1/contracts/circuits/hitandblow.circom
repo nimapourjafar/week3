@@ -68,6 +68,7 @@ template HitAndBlow() {
             equalHB[4*j+k].in[0] <== soln[j];
             equalHB[4*j+k].in[1] <== guess[k];
             blow += equalHB[4*j+k].out;
+            // checks if in same position and updates hit & blwo accordingly
             if (j == k) {
                 hit += equalHB[4*j+k].out;
                 blow -= equalHB[4*j+k].out;
